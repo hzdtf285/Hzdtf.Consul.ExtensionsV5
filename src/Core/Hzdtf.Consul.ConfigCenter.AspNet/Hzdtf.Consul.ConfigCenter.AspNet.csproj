@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <OutputType>Library</OutputType>
+    <Authors>黄振东</Authors>
+    <Company>Hzdtf</Company>
+    <Product>Consul注册中心AspNet扩展类库</Product>
+    <Description>Consul注册中心AspNet扩展类库，运行在AspNet 5以上</Description>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>Hzdtf.Consul.ConfigCenter.AspNet.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>Hzdtf.Consul.ConfigCenter.AspNet.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Winton.Extensions.Configuration.Consul" Version="3.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Hzdtf.Consul.Extensions.AspNet\Hzdtf.Consul.Extensions.AspNet.csproj" />
+    <ProjectReference Include="..\Hzdtf.Consul.Extensions.Common\Hzdtf.Consul.Extensions.Common.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Hzdtf.Mini">
+      <HintPath>..\..\Library\Hzdtf.Mini.dll</HintPath>
+    </Reference>
+    <Reference Include="Hzdtf.Utility">
+      <HintPath>..\..\Library\Hzdtf.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="Hzdtf.Utility.AspNet">
+      <HintPath>..\..\Library\Hzdtf.Utility.AspNet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

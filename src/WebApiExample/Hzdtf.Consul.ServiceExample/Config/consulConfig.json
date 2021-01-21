@@ -1,0 +1,8 @@
+{
+  "ConsulAddress": "http://localhost:8500",
+  "ServiceName": "ServiceExampleA",
+  "Tags": [
+    "M1",
+    "M2"
+  ]
+}

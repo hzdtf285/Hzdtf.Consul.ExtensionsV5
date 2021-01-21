@@ -1,0 +1,11 @@
+{
+  "Services": [
+    {
+      "ServiceName": "ServiceExampleA",
+      "tag": "M1"
+    }
+  ],
+  "GlobalConfiguration": {
+    "LoadBalanceMode": "ROUND_ROBIN"
+  }
+}

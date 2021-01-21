@@ -1,0 +1,4 @@
+{
+  "ConsulAddress": "http://localhost:8500",
+  "IntervalMillseconds" : 10000
+}
