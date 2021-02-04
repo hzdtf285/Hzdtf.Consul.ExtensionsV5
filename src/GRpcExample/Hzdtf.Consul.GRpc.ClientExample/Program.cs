@@ -23,7 +23,7 @@ namespace Hzdtf.Consul.GRpc.ClientExample
             for (var i = 0; i < 20; i++)
             {
                 var url = unityServicesBuilder.BuilderAsync("GRpcServiceExampleA").Result;
-                using (var channel = GrpcChannel.ForAddress(url))
+                GRpcChannelUtil.CreateChannel(url, (channel, header) =>
                 {
                     var client = new Greeter.GreeterClient(channel);
                     var res = client.SayHello(new HelloRequest()
@@ -33,7 +33,7 @@ namespace Hzdtf.Consul.GRpc.ClientExample
                     Console.WriteLine($"第{i}次请求[{url}]:{res.ToJsonString()}");
 
                     Thread.Sleep(1000);
-                }
+                });
             }
 
             Console.ReadLine();
