@@ -17,8 +17,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Grpc.AspNetCore" Version="2.34.0" />
-    <PackageReference Include="NConsul.AspNetCore" Version="0.8.0" />
+    <PackageReference Include="Grpc.AspNetCore" Version="2.38.0" />
+    <PackageReference Include="NConsul.AspNetCore" Version="0.8.1" />
   </ItemGroup>
 
   <ItemGroup>
