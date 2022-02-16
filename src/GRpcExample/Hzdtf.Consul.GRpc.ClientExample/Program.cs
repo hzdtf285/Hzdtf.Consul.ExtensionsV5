@@ -16,11 +16,18 @@ namespace Hzdtf.Consul.GRpc.ClientExample
 
             Console.WriteLine("start grpc test...");
 
+            Example1();
+
+            Console.ReadLine();
+        }
+
+        private static void Example1()
+        {
             var serviceProvider = new ConsulServicesProviderMemory();
             var serviceOptions = new UnityServicesOptionsCache();
             var unityServicesBuilder = new UnityServicesBuilder(serviceProvider, serviceOptions);
 
-            for (var i = 0; i < 20; i++)
+            for (var i = 0; i < 1000; i++)
             {
                 var url = unityServicesBuilder.BuilderAsync("GRpcServiceExampleA").Result;
                 GRpcChannelUtil.CreateChannel(url, (channel, header) =>
@@ -35,8 +42,6 @@ namespace Hzdtf.Consul.GRpc.ClientExample
                     Thread.Sleep(1000);
                 });
             }
-
-            Console.ReadLine();
         }
     }
 }

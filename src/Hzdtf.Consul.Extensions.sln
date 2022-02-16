@@ -15,17 +15,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hzdtf.Consul.ConfigCenter.A
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01.WebApiExample", "01.WebApiExample", "{0AEAB0B3-0F6F-442D-A488-39B44C8DC22B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hzdtf.Consul.ClientExample", "WebApiExample\Hzdtf.Consul.ClientExample\Hzdtf.Consul.ClientExample.csproj", "{E0489A86-800A-45DA-A046-01C5AF93A791}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hzdtf.Consul.ClientExample", "WebApiExample\Hzdtf.Consul.ClientExample\Hzdtf.Consul.ClientExample.csproj", "{E0489A86-800A-45DA-A046-01C5AF93A791}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hzdtf.Consul.ServiceExample", "WebApiExample\Hzdtf.Consul.ServiceExample\Hzdtf.Consul.ServiceExample.csproj", "{C854A66F-501A-4123-8F7D-5059C05C60AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hzdtf.Consul.ServiceExample", "WebApiExample\Hzdtf.Consul.ServiceExample\Hzdtf.Consul.ServiceExample.csproj", "{C854A66F-501A-4123-8F7D-5059C05C60AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hzdtf.Consul.WebClientExample", "WebApiExample\Hzdtf.Consul.WebClientExample\Hzdtf.Consul.WebClientExample.csproj", "{CF00B902-AAA4-4CB1-9019-263CC2DC1A43}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hzdtf.Consul.WebClientExample", "WebApiExample\Hzdtf.Consul.WebClientExample\Hzdtf.Consul.WebClientExample.csproj", "{CF00B902-AAA4-4CB1-9019-263CC2DC1A43}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GRpcExample", "GRpcExample", "{51A0D08B-690B-4B33-9630-2CC7BF963E3C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hzdtf.Consul.GRpc.ClientExample", "GRpcExample\Hzdtf.Consul.GRpc.ClientExample\Hzdtf.Consul.GRpc.ClientExample.csproj", "{336FCAF0-B130-4FD7-867F-5057BED217F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hzdtf.Consul.GRpc.ClientExample", "GRpcExample\Hzdtf.Consul.GRpc.ClientExample\Hzdtf.Consul.GRpc.ClientExample.csproj", "{336FCAF0-B130-4FD7-867F-5057BED217F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hzdtf.Consul.GRpc.ServiceExample", "GRpcExample\Hzdtf.Consul.GRpc.ServiceExample\Hzdtf.Consul.GRpc.ServiceExample.csproj", "{32789439-9B6F-45A2-A3D4-1092F60657FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hzdtf.Consul.GRpc.ServiceExample", "GRpcExample\Hzdtf.Consul.GRpc.ServiceExample\Hzdtf.Consul.GRpc.ServiceExample.csproj", "{32789439-9B6F-45A2-A3D4-1092F60657FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hzdtf.Consul.GRpc.ClientWebExample", "GRpcExample\Hzdtf.Consul.GRpc.ClientWebExample\Hzdtf.Consul.GRpc.ClientWebExample.csproj", "{07E50AC3-EDD0-4B02-A98F-A6A0CE060AB1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{32789439-9B6F-45A2-A3D4-1092F60657FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{32789439-9B6F-45A2-A3D4-1092F60657FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{32789439-9B6F-45A2-A3D4-1092F60657FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07E50AC3-EDD0-4B02-A98F-A6A0CE060AB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07E50AC3-EDD0-4B02-A98F-A6A0CE060AB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07E50AC3-EDD0-4B02-A98F-A6A0CE060AB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07E50AC3-EDD0-4B02-A98F-A6A0CE060AB1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -83,6 +89,7 @@ Global
 		{CF00B902-AAA4-4CB1-9019-263CC2DC1A43} = {0AEAB0B3-0F6F-442D-A488-39B44C8DC22B}
 		{336FCAF0-B130-4FD7-867F-5057BED217F3} = {51A0D08B-690B-4B33-9630-2CC7BF963E3C}
 		{32789439-9B6F-45A2-A3D4-1092F60657FF} = {51A0D08B-690B-4B33-9630-2CC7BF963E3C}
+		{07E50AC3-EDD0-4B02-A98F-A6A0CE060AB1} = {51A0D08B-690B-4B33-9630-2CC7BF963E3C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9434272F-58DA-499B-A899-1FE078B8AFB9}

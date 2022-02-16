@@ -1,7 +1,6 @@
 ﻿using Consul;
 using Hzdtf.Utility.Attr;
 using Hzdtf.Utility.RemoteService.Provider;
-using Newtonsoft.Json;
 using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
@@ -94,6 +93,8 @@ namespace Hzdtf.Consul.Extensions.Common
 
                 addresses.Add(add);
             }
+
+            Console.WriteLine($"{DateTime.Now.ToFullFixedDateTime()} 服务名:{serviceName},consol远程获取的地址列表:{addresses.ToJsonString()}");
 
             return addresses.ToArray();
         }

@@ -2,7 +2,6 @@
 using Hzdtf.Consul.Extensions.Common;
 using Hzdtf.Utility.RemoteService.Provider;
 using Hzdtf.Utility.SystemV2;
-using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
@@ -60,7 +59,7 @@ namespace Microsoft.Extensions.DependencyInjection
                 switch (unityConsulOptions.CacheType)
                 {
                     case ServiceProviderCacheType.TIMER_REFRESH:
-                        builder.ServiceProvider = new ConsulServiceProviderAgg(unityConsulOptions.ConsulBasicOption.IntervalMillseconds, unityConsulOptions.ConsulBasicOption);
+                        builder.ServicesProvider = new ConsulServiceProviderAgg(unityConsulOptions.ConsulBasicOption.IntervalMillseconds, unityConsulOptions.ConsulBasicOption);
 
                         break;
 
@@ -70,12 +69,12 @@ namespace Microsoft.Extensions.DependencyInjection
                             options.Clock = new LocalSystemClock();
                         });
 
-                        builder.ServiceProvider = new ConsulServicesProviderMemory(Microsoft.Extensions.Options.Options.Create<ConsulBasicOption>(unityConsulOptions.ConsulBasicOption));
+                        builder.ServicesProvider = new ConsulServicesProviderMemory(Microsoft.Extensions.Options.Options.Create<ConsulBasicOption>(unityConsulOptions.ConsulBasicOption));
 
                         break;
 
                     default:
-                        builder.ServiceProvider = new ConsulServicesProvider(unityConsulOptions.ConsulBasicOption);
+                        builder.ServicesProvider = new ConsulServicesProvider(unityConsulOptions.ConsulBasicOption);
 
                         break;
                 }
